@@ -16,7 +16,6 @@ JS statements:
     --> while and so on
 */
 
-
 let full_name = "Krishna Adhikari";
 var hobby = "Programming & Coding";
 console.log("My name is: ", full_name, "\nand My hobby is: ", hobby);
@@ -40,3 +39,21 @@ let checkName = "Krishna Adhikari";
 var hobby = "Programming & Coding";
 console.log(`My name is: ${checkName} and 
 My hobby is ${hobby}`);
+
+
+/*
+DIFFERENCE IN VAR AND LET
+
+var and let are both used for variable declaration in javascript but the difference between them is that var is function scoped and let is block scoped.
+It can be said that a variable declared with var is defined throughout the program as compared to let.
+An example will clarify the difference even better
+Example of var:
+
+        Input:
+        console.log(x);
+        var x=5;
+        console.log(x);
+        Output:
+        undefined
+        5
+*/
