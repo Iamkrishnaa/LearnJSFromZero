@@ -130,5 +130,49 @@ Value = undefined
 // --    JAVASCRIPT LET    --
 // --------------------------
 
-/**/
+/*
+JS LET keyword was introduced on es6, 2015
+    Properties of let
+    --> variables declared with let canntot be redeclared
+        let x = "check";
+        let x = "redeclared";
+        This will give syntax error as x has already declared
 
+        var x = "check";
+        var x = "redeclared";
+        we can redeclare variables declared with var
+
+    
+    --> variables declared with let have block scope
+        before 2015 js has only functional and global scope
+        block scope is that variables declared inside block can't be accessed from outside
+        
+        eg. {
+            let name = "Krishna Adhikari";
+            console.log(name);
+        }
+        name variable can't be accessed from it
+
+        {
+            var x = 2;
+        }
+        x CAN be used here
+
+        ==> variables declared with var can be used outside block
+
+
+    --> variables declared with let must be declared before use
+        {
+            let a;
+            a = 10;
+            console.log(a);
+        }
+*/
+
+// --------------------------
+// --    JAVASCRIPT Const  --
+// --------------------------
+
+/*
+
+*/
