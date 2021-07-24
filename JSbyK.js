@@ -76,3 +76,59 @@ initialize and use the declared variables
         let sum = x + y;
         console.log(sum);
 */
+
+// -------------------------
+// -- JAVASCRIPT COMMENTS --
+// -------------------------
+
+/*
+Comments in JavaScript are used to explain and describe the code
+They are used to prevent program execution when testing code
+Comments in js will not be executed during program execution
+
+In JS there are mainly two types of comments, they are:
+    Single line comments
+        --> Single line comments starts with //
+        --> They are used to write a single line comments
+    
+    Multi-line comments
+        --> Single Line comments stats with /* and ends with '*/    /* 
+        --> They are used to write code documetation and multi line comments
+*/
+
+// --------------------------
+// -- JAVASCRIPT VARIABLES --
+// --------------------------
+
+/*
+There are three ways to declare javascript variables
+        Using,
+        var
+        let
+        const
+        eg. let x = 10; here x is variable
+
+JS IDENTIFIERS
+Js variables should identified with unique names
+    Rules for writing variable names
+    --> Names can contian letters, digits, underscores, and dollar signs
+    --> Names should begin with letter, $ and _
+    --> Names are casesensitive
+    --> They can't use reserved words of js
+
+JS one statement many variables
+    var firstName = "Krishna", lastName="Adhikari", age = 21;
+
+Value = undefined
+    var name;  this is undefined as variable name is not initialized
+    --> undefined
+
+    var name = "Krishna Adhikari"; here variable name is re-declared
+*/
+
+// --------------------------
+// --    JAVASCRIPT LET    --
+// --------------------------
+
+/**/
+
