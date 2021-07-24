@@ -16,10 +16,10 @@ JS statements:
     --> while and so on
 */
 
-let full_name = "Krishna Adhikari";
-var hobby = "Programming & Coding";
-console.log("My name is: ", full_name, "\nand My hobby is: ", hobby);
-console.log();
+// let full_name = "Krishna Adhikari";
+// var hobby = "Programming & Coding";
+// console.log("My name is: ", full_name, "\nand My hobby is: ", hobby);
+// console.log();
 
 /*
     JS Keywords
@@ -35,10 +35,11 @@ console.log();
 
 
 //back tick in js is called template literals
-let checkName = "Krishna Adhikari";
-var hobby = "Programming & Coding";
-console.log(`My name is: ${checkName} and 
-My hobby is ${hobby}`);
+
+// let checkName = "Krishna Adhikari";
+// var hobby = "Programming & Coding";
+// console.log(`My name is: ${checkName} and 
+// My hobby is ${hobby}`);
 
 
 /*
@@ -221,3 +222,50 @@ In JS const are called constants which are simply fixed values
 // ------------------------------
 // --    JAVASCRIPT OPERATORS  --
 // ------------------------------
+
+/*
+In JS operators are used to assign or compare values and perform different operations
+
+There are various types of operators in js
+    --> Arithmetic Operators
+        Arithmetic Operators are used to perform arithmetic operations
+        ==> +, -, *, ?, %, ++, --
+            + -->> This is addition and used to add two numbers
+            - -->> This is subtraction and used to subtract two numbers
+            * -->> This is multiplication and used to multiply two numbers
+            / -->> This is division used to perfrom division
+            % -->> This is used to find the remainder of integer values
+            ++ -->> This is used to increase the value by 1
+            -- -->> This is used to decrease value by 1
+
+    --> Comparision Operators
+        These operators are used to compare two values/variables
+            == -->> This compares the equility of two operands
+            === -->> This operator compares the equility of two operands wih type
+            != -->> This compares inequility of two operands
+            > -->> This checks whether left value is greater than right value
+            < -->> This checks if left value is smaller than right value
+            >= --> This checks whether
+            <= -->
+
+    --> Logical Operators
+        Logical Operators are sumbols that are used to connect two or more expressions.
+            && -->> 
+            || -->> 
+            ! -->> 
+
+    --> Assignment Operators
+        These operators are used to assign values to ceratain variables
+            = -->> 
+            += -->> 
+            -= -->> 
+            *= -->>
+            /= -->>
+            %= -->> 
+
+    --> Ternary Operators
+            :? -->> 
+
+    --> typeof Operators 
+        This operator returns the type of the variables
+*/
