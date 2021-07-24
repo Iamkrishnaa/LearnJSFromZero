@@ -57,3 +57,22 @@ Example of var:
         undefined
         5
 */
+
+
+// -----------------------
+// -- JAVASCRIPT SYNTAX --
+// -----------------------
+
+/*
+Js syntax are set of rules to write js code
+
+creating variables in js
+        var x;
+        let y;
+
+initialize and use the declared variables
+        x = 10;
+        y = 20;
+        let sum = x + y;
+        console.log(sum);
+*/
