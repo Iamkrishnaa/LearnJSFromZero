@@ -1,1 +1,1 @@
-console.log("This is introduction");
+//This is the starting file and we will be learning js from begining
