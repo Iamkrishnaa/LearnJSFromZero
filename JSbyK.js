@@ -170,9 +170,54 @@ JS LET keyword was introduced on es6, 2015
 */
 
 // --------------------------
-// --    JAVASCRIPT Const  --
+// --    JAVASCRIPT CONST  --
 // --------------------------
 
 /*
+In JS const are called constants which are simply fixed values
+        --> Variales declared with const cant't be redeclared
+            const pi = 3.14;
+            const pi = 3.41; ==>This will throw an error as we are redeclaring 
 
+        --> variables with const cant be reassigned
+            const a = 12;
+            a = 14; ==> This will throw an error as we are re assigning the value of a
+
+        --> variables with const are block scoped
+            {
+                const myName = "Krishna";
+            }
+
+            the variable myName can't be accessed here as const is block scoped
+
+        --> const variables must be assigned
+            const a;
+            a = 12; ==> This will throw an error as a is assigned later
+        
+        --> Always declare const in
+            >> A new Array
+            >> A new Object
+            >> A new Function
+            >> A new RegExp
+
+        --> NOTE:::
+            ==> The keyword const doesnt define a constant value but it defines constant reference to value So that, 
+                >> We can't reassign a constant value, array, object
+            But we can,
+                >> We can change constant array and object
+
+                For eg.
+                const players = ["Krishna", "Gaurav", "Sandesh"];
+                    >> we can change the element
+                        players[1] = "Roshan";
+                    >> we can add element
+                        players.push("Ujjwal");
+
+                    >> But we cannot reassign the array
+                        const players = [""Ronit", "Shankar"];
+                        ==> This will throw an array as it was already assigned
 */
+
+// ------------------------------
+// --    JAVASCRIPT OPERATORS  --
+// ------------------------------
