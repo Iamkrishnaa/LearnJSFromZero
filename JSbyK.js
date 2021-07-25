@@ -284,6 +284,81 @@ There are various types of operators in js
         >>> --> zero fill right shift, 
 
 MOREOVER JS contains some string operators like "name "+"age" = name age concatinate two strings
+*/
+
+// -------------------------------
+// --    JAVASCRIPT DATA TYPES  --
+// -------------------------------
+
+/*
+Data types are the types of the value in programming
+>> There are mainly two types of data types
+    --> Primitive Data types
+        Data types that are already defined in js are primitive data types in js
+        --> String, Represents sequence of characters e.g "krishna"
+        --> Number, Represents numeric values e.g 4, 10.8, -12, -10.11 etc
+        --> Boolean, Represents boolean value either false or true
+        --> Undefined, represents undefined value
+        --> Null, represents null, i.e. no value at all
+
+    --> Non-primitive Data types also known as reference data types
+        They are data types that are defined by users and apart from primitive data types
+        --> Object
+        --> Array 
+        --> RegExp
+
+    NOTE: Adding number and string, JS will treat number as string
+        e.g. let x = 10;
+            let name = "Krishna";
+            let add = x + name; -->> 10Krishna
+
+            furthermore, js evaluates expression from left to right. So,
+            let x = 10 + 4 + "Krishna"; --> 14Krishna
+            let y = "Krishna" + 10 + 4; --> Krishna104
+
+    NOTE: In Js types are dynamic which means the same variable can be used to hold different data types and we can change the type later 
+            {
+                let x; here x is undefined
+                x = 5; here x is Number
+                x = "Krishna"; here x is string
+            }
+*/
 
 
+// -------------------------------
+// --    JAVASCRIPT FUNCTIONS   --
+// -------------------------------
+
+/*
+Functions are the block of codes that are used to perfrom the specific tasks.
+>> In other programming languages functions are also called methods.
+>> A function in javascript should be invoked or called by something.
+        >> SYNTAX TO WRITE JS FUNCTIONS
+        
+        function functionName(Parameters seperated by commas){
+            code to execute 
+        }
+    
+    Function Return
+    return is a keyword used to return something from the functions
+    when js code reaches the return statement the code will stop executing
+        >> eg. function add(a, b){
+            return a+b;
+        }
+
+        The function above returns sum of two numbers
+    
+        USE OF FUNCTIONS is mainly Code reusability
+
+
+        LOCAL VARIABLES
+            >> Variables defined inside functions are local variables
+            >> They can't be accessed from outside the functions
+            eg. 
+            function printName(){
+                let name = "Krishna Adhikari";
+
+                we can use name here
+            }
+                we can't use name here
 */
