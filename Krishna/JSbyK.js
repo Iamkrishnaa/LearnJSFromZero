@@ -362,3 +362,106 @@ Functions are the block of codes that are used to perfrom the specific tasks.
             }
                 we can't use name here
 */
+
+// -------------------------------
+// --    JAVASCRIPT OBJECTS     --
+// -------------------------------
+
+/*
+    In JS objects are non-primitive data types
+    They are like other variables but they can store multiple values/properties/methods
+
+    In js objects can be created in two ways
+    Value is stored in property : property value format
+        >> Object literal
+            This is simple way to create objects eg.
+            var car1 ={
+                "model": "Ferrari VO1",
+                "price": 12221221,
+                "milege": 23,
+                getModel: function(){
+                    return this.model;
+                }
+            }
+            accessing object values,
+                car1.getModel();
+                car1.price;
+
+        >> Object constructor
+            We can create js objects using new keyword too
+            var person = new Object();
+            person.firstName="Krishna";
+            person.age = 21;
+
+            accessing values
+            person.firstName; >> Krishna
+    
+
+    Objects Methods
+    >> hasOwnProperty  -->> checks if key/property exists in object 
+        eg. person.hasOwnProperty("firstName"); >> if property exixts it returns true else false
+
+    >> access object keys
+            for (var key in person){
+                console.log(key);
+            }
+
+    Objects can be Nested. >> objects inside object
+    >> eg. 
+            var obj = {
+                "firstName": "Krishna";
+                "address": {
+                    "country": "Nepal",
+                    "City": "Pokhara",
+                }
+            }
+
+    NOTE:
+    JavaScript object is a standalone entity that holds multiple values in terms of properties and methods.
+    
+    Object property stores a literal value and method represents function.
+    
+    An object can be created using object literal or object constructor syntax.
+    
+    Object literal:
+    var person = { 
+        firstName: "James", 
+        lastName: "Bond", 
+        age: 25, 
+        getFullName: function () { 
+            return this.firstName + ' ' + this.lastName 
+            } 
+    };
+    
+    Object constructor:
+    var person = new Object();
+                        
+    person.firstName = "James";
+    person["lastName"] = "Bond"; 
+    person.age = 25;
+    person.getFullName = function () {
+            return this.firstName + ' ' + this.lastName;
+        };
+    
+    Object properties and methods can be accessed using dot notation or [ ] bracket.
+    
+    An object is passed by reference from one function to another.
+    
+    An object can include another object as a property
+
+    More on accessing values,
+        >> person["firstName"];
+        >> person.firstName;
+    !NOTE: Do Not Declare Strings, Numbers, and Booleans as Objects!
+*/
+
+// -------------------------------
+// --    JAVASCRIPT STRINGS     --
+// -------------------------------
+
+/*
+    JS strings are used to store and manipulate texts
+    eg. let text = "Hello World";
+
+    JS STRING METHODS
+*/
