@@ -15,9 +15,8 @@ CHALLENGE 1:
 */
 
 
-var num = 493193;
+var num = 999999999;
 console.log("The given number is:", num);
-numArr = [];
 
 
 while(true){
