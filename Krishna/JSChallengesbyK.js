@@ -15,21 +15,6 @@ CHALLENGE 1:
 */
 
 
-var num = 999999999;
-console.log("The given number is:", num);
-
-
-while(true){
-    var numSum = getSum(num);
-    var numStr = numSum.toString();
-    var numLength = numStr.length;
-    num = numSum;
-    console.log(">>",num);
-    if(numLength == 1){
-        break;
-    }
-}
-
 function getSum(number){
     var strNum = number.toString();
     var numSize = strNum.length - 1;
@@ -41,5 +26,33 @@ function getSum(number){
         sum += num;
         numSize--;
     }
-    return sum;
+
+    numSize = sum.toString().length;
+    
+    //using recursion
+    if(numSize == 1){
+        console.log("The sum is:", sum);
+        return sum;
+    }else{
+        getSum(sum);
+    }
+    
 }
+
+var num = 493193;
+console.log("The given number is:", num);
+
+getSum(num);
+
+
+//using simple method
+// while(true){
+//     var numSum = getSum(num);
+//     var numStr = numSum.toString();
+//     var numLength = numStr.length;
+//     num = numSum;
+//     console.log(">>",num);
+//     if(numLength == 1){
+//         break;
+//     }
+// }
