@@ -15,34 +15,34 @@ CHALLENGE 1:
 */
 
 
-function getSum(number){
-    var strNum = number.toString();
-    var numSize = strNum.length - 1;
+// function getSum(number){
+//     var strNum = number.toString();
+//     var numSize = strNum.length - 1;
 
-    var sum = 0;
+//     var sum = 0;
 
-    while(numSize >= 0){
-        let num = parseInt(strNum[numSize]);
-        sum += num;
-        numSize--;
-    }
+//     while(numSize >= 0){
+//         let num = parseInt(strNum[numSize]);
+//         sum += num;
+//         numSize--;
+//     }
 
-    numSize = sum.toString().length;
+//     numSize = sum.toString().length;
     
-    //using recursion
-    if(numSize == 1){
-        console.log("The sum is:", sum);
-        return sum;
-    }else{
-        getSum(sum);
-    }
+//     //using recursion
+//     if(numSize == 1){
+//         console.log("The sum is:", sum);
+//         return sum;
+//     }else{
+//         getSum(sum);
+//     }
     
-}
+// }
 
-var num = 211;
-console.log("The given number is:", num);
+// var num = 211;
+// console.log("The given number is:", num);
 
-getSum(num);
+// getSum(num);
 
 
 //using simple method more code
@@ -72,7 +72,56 @@ If the input string is empty, return an empty string. The words in the input Str
     ""  -->  ""
 */
 
+// var givenWord = "is2 Thi1s T4est 3a";
+// console.log(order(givenWord));
+// function order(words){
+//     var wordsArr = words.split(" ");
 
-function order(words){
-  
-}
+//     if(wordsArr.length == 0){
+//         return "";
+//     }else{
+//         var finalWord = "";
+
+//         for(var i = 1; i<=wordsArr.length;i++){
+//             var positionedWord = "";
+//             for(var a in wordsArr){
+//                 if(wordsArr[a].includes(i)){
+//                     positionedWord = wordsArr[a];
+//                     finalWord += wordsArr[a];
+//                     if(i != wordsArr.length){
+//                         finalWord += " ";
+//                     }
+//                 }
+//             }
+//         }
+//         return finalWord;
+//     }
+// }
+
+
+//CHELLENGE 3
+
+// var arr = [1, 3, 9, 15, 90];
+
+// console.log(calculateAverage(arr));
+// function calculateAverage(arr){
+//     let avg = 0;
+//     for(var i in arr){
+//         avg += arr[i];
+//     }
+//     return (avg/arr.length);
+// }
+
+//CHALLENGE 4
+
+// var arr = [1, 4, -5, 7, -2, 11, -22, 55];
+// console.log("Max num is:", findMaxNum(arr));
+// function findMaxNum(arr){
+//     let maxNum = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         if(maxNum < arr[i]){
+//             maxNum = arr[i];
+//         }
+//     }
+//     return maxNum;
+// }

@@ -461,7 +461,161 @@ Functions are the block of codes that are used to perfrom the specific tasks.
 
 /*
     JS strings are used to store and manipulate texts
-    eg. let text = "Hello World";
+    eg. let text = "Hello World"; //this is string text
+        let tex = new String("Hello World"); //this is string object
 
     JS STRING METHODS
+    Extracting String Parts
+        >> slice --> It extracts a part of string and returns the extracted part as new string
+            takes 2 parameters (start, end); start is starting position and end is end position but end not included
+
+            let str = "Apple, Banana, Kiwi";
+            let slicedStr = str.slice(7,13);
+            console.log(slicedStr); This prints Banana. Start position 7th index B and ends with 12th index a
+
+            NOTE: Slice accepts negative integer also
+                eg. console.log(slice(-3)); this will print Kiwi
+
+        >> substring --> Substring is similar to slice but the only differene is that it doesn't accept negative integer
+            eg. substring(7,12); this is accepted
+                substring(-4); this is not accepted
+
+        >> substr --> It is also similar to slice but the second parameter defines the length of extracted part
+            eg. let n = "this is ok";
+                console.log(substr(3, 6); >> s is
+                first parameter is starting index and last is length to extract 
+
+
+    Replacing String Content
+        >> The replace() method in js replaces a specified value with another value in string
+            let words = "my name is punya adhikari.";
+            let replacedText = words.replace("punya", "Krishna");  this replaces punya with Krishna
+            console.log(replacedText); >> my name is Krishna adhikari
+
+        !NOTE: 
+        >> the replace() method does not change the string but it returns new string
+        
+        >> replace method only replaces first match
+            for eg. let txt = "these is great. He is good";
+                    let replacedText = txt.replace("is", "are");
+                    this returns these are great. He is good    >> replaces only first match
+        
+        >> replace is case sensitive i.e. Alpha & alpha are different
+            to replace case insensitive we can use regular expression with an /i flag
+            >> rext.replace(/ALPHA/i, "delta"); this replaces alpha with delta.
+            !Regular expressions are written without qotes
+
+            to replace all matches we can use /g flag
+                let txt = "these is great. He is good";
+                let replacedText = txt.replace(/is/g, "are");
+                this returns these are great. He are good >> replaces all matches
+            
+    
+    Converting to Upper and Lower Case
+        >> toUpperCase();
+            This converts the word to uppercase;
+            eg. word.toUpperCase(); This returns the value of words in uppercase
+        
+        >>toLowerCase();
+            This converts the word to lowercase
+            eg. word.toLowerCase(); This will returns the value of word in lowercase.
+
+
+    Concat()
+        >> this method is used to join two or more texts/strings
+        let x = "Hi";
+        let greet = "Good Morning.";
+        let newText = x.concat(" ", greet);
+        >> This will join strings with value of x
+
+        
+    !!ALL STRING METHODS RETURNS NEW STRING, THEY DONT MODIFY ORIGINAL STRING
+    
+    String.trim();
+        >> This method removes all the white space from starting and begining of the string
+        e.g, let name = "    Krishna Adhikari     ";
+                console.log(name.trim()); >> Krishna Adhikari
+                This removes spaces from starting and ending of string
+
+    JS String Pdding
+        >> This supports padding at begining and end of a string
+            This has two methods. padStart and padEnd
+            e.g.    let nam = "5";
+                    console.log(nam.padEnd(4, 0));
+                     >> returns 5000
+
+    
+    Extracting String Characters
+        >> charAt(position) --> This will return the character at a specified index (position) in a string
+            let text = "Hello World";
+            text.charAt(1);  >> This returns e
+        
+        >> charCodeAt(position) --> This will return the character unicode of specified index (position)
+            e.g.
+                let text = "Hello World";
+                console.log(text.charCodeAt(0));  returns 72 as H in unicode is 72
+
+
+    Property Access
+        >> we can access every element in string using specific index
+            let name = "Krishna";
+            console.log(name[2]); >> i
+
+        NOTE: If we want to work with string as an array, we can convert it to an array
+
+    
+    Converting a string to an array
+        >> To convert a string to array we can use split
+            split takes parameter called seperator which specify the split position
+            if seperators are not defined, it return array with wole string as index [0]
+
+                text.split(",")          // Split on commas
+                text.split(" ")          // Split on spaces
+                text.split("|")          // Split on pipe
+
+        let text = "great";
+
+        let strArr = text.split("");
+
+        console.log(strArr); >> this will return [ 'g', 'r', 'e', 'a', 't' ]
+
+
+
+    JS String Search
+        we can search specific string in js using various methods like
+            >> String.indexOf()
+                This returns the index of the first occurrence of a specified text in a string
+
+            >>String.search()
+                The search() method searches a string for a specified value and returns the position of the match:
+
+                The two methods, indexOf() and search(), are equal?
+
+                They accept the same arguments (parameters), and return the same value?
+
+                The two methods are NOT equal. These are the differences:
+
+                The search() method cannot take a second start position argument.
+                The indexOf() method cannot take powerful search values (regular expressions).
+                You will learn more about regular expressions in a later chapter.
+
+            >> String.lastindexOf() 
+                The lastIndexOf() method returns the index of the last occurrence of a specified text in a string
+
+            >> String.startsWith() 
+            >> String.endsWith() etc..
+    
+
+    JS Template Literals
+        Template Literals use back-ticks (``) rather than the quotes ("") to define a string:
+        With template literals, you can use both single and double quotes inside a string:
+        Template literals allows multiline strings:
+
+        Template literals provide an easy way to interpolate variables and expressions into strings.
+            >> ${variables/expressions}
+            eg.
+            let price = 10;
+            let VAT = 0.25;
+
+            let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
 */
