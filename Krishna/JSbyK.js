@@ -579,6 +579,8 @@ Functions are the block of codes that are used to perfrom the specific tasks.
 
         console.log(strArr); >> this will return [ 'g', 'r', 'e', 'a', 't' ]
 
+        we can use join to convert array to string and split is used to onvert string to array
+
 
 
     JS String Search

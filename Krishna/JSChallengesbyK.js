@@ -125,3 +125,88 @@ If the input string is empty, return an empty string. The words in the input Str
 //     }
 //     return maxNum;
 // }
+
+
+//CHALLENGE 5
+// write a js code to reverse a given sentence.
+// Note: No extra whitespaces should be allowed i.e. length of provided sentence must mach with reversed.
+
+// let sentence = "The quick brown fox jumping over the lazy dog";
+
+// console.log(reverseSentence(sentence));
+
+// function reverseSentence(sentence){
+//     let splittedSentence = sentence.split(" ");
+//     let reversedSentence = [];
+
+//     for(let i = splittedSentence.length - 1; i >= 0; i--){
+//         reversedSentence.push(splittedSentence[i]);
+//     }
+//     return reversedSentence.join(" ");
+// }
+
+
+//CHALLENGE 6
+
+/*
+Create a function that will convert a string containing a binary number into a number
+*/
+
+
+// let binaryString = "1110011";
+
+// console.log(binToNum(binaryString));
+
+// function binToNum(binStr){
+//     let binaryArr = binStr.split("");
+//     binaryArr.reverse();
+
+//     let decimalNum = 0;
+
+//     // for (let i = 0; i < binaryArr.length; i++){
+//     //     let decVal = (binaryArr[i]*2)**i;
+//     //     decimalNum += decVal;
+//     // }
+
+//     binaryArr.forEach((value, index, arr) => {
+//         decimalNum += (value*2)**index;
+//     });
+
+//     return decimalNum;
+// }
+
+//CHELLENGE 7
+// capatilize first letter of each word in text
+
+// let word = "the quick brown fox jumping over the lazy dog";
+
+// console.log(capatilizeFunction(word));
+
+// function capatilizeFunction(word){
+//     let wordsArr = word.split(" ");
+
+//     let changedWordArr = [];
+
+//     wordsArr.forEach((value) => {
+//         let word = "";
+//         value.split("").forEach((val, index) => {
+//             if(index == 0){
+//                 word += val.toUpperCase();
+//             }else{
+//                 word += val;
+//             }
+//         });
+
+//         changedWordArr.push(word);
+//     });
+
+//     return changedWordArr.join(" ");
+
+// }
+
+
+function printTable(num){
+    for(let i = 1; i <= 10; i++){
+        console.log(num, "*", i, "=", num*i);
+    }
+}
