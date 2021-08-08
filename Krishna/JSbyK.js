@@ -1,6 +1,6 @@
 /*
-JS statements: 
-    JS statements are used to control the program flow 
+JS statements:
+    JS statements are used to control the program flow
     Some examples of js statements are:
     --> //comments
     --> let
@@ -91,10 +91,10 @@ In JS there are mainly two types of comments, they are:
     Single line comments
         --> Single line comments starts with //
         --> They are used to write a single line comments
-    
+
     Multi-line comments
-        --> Single Line comments stats with /* and ends with '*/    /* 
-        --> They are used to write code documetation and multi line comments
+        --> Single Line comments stats with /* and ends with '*/    /*
+--> They are used to write code documetation and multi line comments
 */
 
 // --------------------------
@@ -143,11 +143,11 @@ JS LET keyword was introduced on es6, 2015
         var x = "redeclared";
         we can redeclare variables declared with var
 
-    
+
     --> variables declared with let have block scope
         before 2015 js has only functional and global scope
         block scope is that variables declared inside block can't be accessed from outside
-        
+
         eg. {
             let name = "Krishna Adhikari";
             console.log(name);
@@ -178,7 +178,7 @@ JS LET keyword was introduced on es6, 2015
 In JS const are called constants which are simply fixed values
         --> Variales declared with const cant't be redeclared
             const pi = 3.14;
-            const pi = 3.41; ==>This will throw an error as we are redeclaring 
+            const pi = 3.41; ==>This will throw an error as we are redeclaring
 
         --> variables with const cant be reassigned
             const a = 12;
@@ -194,7 +194,7 @@ In JS const are called constants which are simply fixed values
         --> const variables must be assigned
             const a;
             a = 12; ==> This will throw an error as a is assigned later
-        
+
         --> Always declare const in
             >> A new Array
             >> A new Object
@@ -202,7 +202,7 @@ In JS const are called constants which are simply fixed values
             >> A new RegExp
 
         --> NOTE:::
-            ==> The keyword const doesnt define a constant value but it defines constant reference to value So that, 
+            ==> The keyword const doesnt define a constant value but it defines constant reference to value So that,
                 >> We can't reassign a constant value, array, object
             But we can,
                 >> We can change constant array and object
@@ -270,18 +270,18 @@ There are various types of operators in js
                 Y = (A>B) ? A : B;
                 This checks if A is greater than B, if true it assigns value of Y as A else assigns value of Y as B
 
-    --> type Operators 
+    --> type Operators
         typeof -->> This operator returns the type of the variables
         instanceof --> This returns true if object is instance of object type
 
     --> Bitwise Operator
-        & --> AND, 
-        | --> OR, 
-        ~ --> NOT, 
-        ^ --> XOR, 
-        << --> Zero fill left shift, 
-        >> --> signed right shift, 
-        >>> --> zero fill right shift, 
+        & --> AND,
+        | --> OR,
+        ~ --> NOT,
+        ^ --> XOR,
+        << --> Zero fill left shift,
+        >> --> signed right shift,
+        >>> --> zero fill right shift,
 
 MOREOVER JS contains some string operators like "name "+"age" = name age concatinate two strings
 */
@@ -304,7 +304,7 @@ Data types are the types of the value in programming
     --> Non-primitive Data types also known as reference data types
         They are data types that are defined by users and apart from primitive data types
         --> Object
-        --> Array 
+        --> Array
         --> RegExp
 
     NOTE: Adding number and string, JS will treat number as string
@@ -316,7 +316,7 @@ Data types are the types of the value in programming
             let x = 10 + 4 + "Krishna"; --> 14Krishna
             let y = "Krishna" + 10 + 4; --> Krishna104
 
-    NOTE: In Js types are dynamic which means the same variable can be used to hold different data types and we can change the type later 
+    NOTE: In Js types are dynamic which means the same variable can be used to hold different data types and we can change the type later
             {
                 let x; here x is undefined
                 x = 5; here x is Number
@@ -334,11 +334,11 @@ Functions are the block of codes that are used to perfrom the specific tasks.
 >> In other programming languages functions are also called methods.
 >> A function in javascript should be invoked or called by something.
         >> SYNTAX TO WRITE JS FUNCTIONS
-        
+
         function functionName(Parameters seperated by commas){
-            code to execute 
+            code to execute
         }
-    
+
     Function Return
     return is a keyword used to return something from the functions
     when js code reaches the return statement the code will stop executing
@@ -347,14 +347,14 @@ Functions are the block of codes that are used to perfrom the specific tasks.
         }
 
         The function above returns sum of two numbers
-    
+
         USE OF FUNCTIONS is mainly Code reusability
 
 
         LOCAL VARIABLES
             >> Variables defined inside functions are local variables
             >> They can't be accessed from outside the functions
-            eg. 
+            eg.
             function printName(){
                 let name = "Krishna Adhikari";
 
@@ -395,10 +395,10 @@ Functions are the block of codes that are used to perfrom the specific tasks.
 
             accessing values
             person.firstName; >> Krishna
-    
+
 
     Objects Methods
-    >> hasOwnProperty  -->> checks if key/property exists in object 
+    >> hasOwnProperty  -->> checks if key/property exists in object
         eg. person.hasOwnProperty("firstName"); >> if property exixts it returns true else false
 
     >> access object keys
@@ -407,7 +407,7 @@ Functions are the block of codes that are used to perfrom the specific tasks.
             }
 
     Objects can be Nested. >> objects inside object
-    >> eg. 
+    >> eg.
             var obj = {
                 "firstName": "Krishna";
                 "address": {
@@ -418,35 +418,35 @@ Functions are the block of codes that are used to perfrom the specific tasks.
 
     NOTE:
     JavaScript object is a standalone entity that holds multiple values in terms of properties and methods.
-    
+
     Object property stores a literal value and method represents function.
-    
+
     An object can be created using object literal or object constructor syntax.
-    
+
     Object literal:
-    var person = { 
-        firstName: "James", 
-        lastName: "Bond", 
-        age: 25, 
-        getFullName: function () { 
-            return this.firstName + ' ' + this.lastName 
-            } 
+    var person = {
+        firstName: "James",
+        lastName: "Bond",
+        age: 25,
+        getFullName: function () {
+            return this.firstName + ' ' + this.lastName
+            }
     };
-    
+
     Object constructor:
     var person = new Object();
-                        
+
     person.firstName = "James";
-    person["lastName"] = "Bond"; 
+    person["lastName"] = "Bond";
     person.age = 25;
     person.getFullName = function () {
             return this.firstName + ' ' + this.lastName;
         };
-    
+
     Object properties and methods can be accessed using dot notation or [ ] bracket.
-    
+
     An object is passed by reference from one function to another.
-    
+
     An object can include another object as a property
 
     More on accessing values,
@@ -483,7 +483,7 @@ Functions are the block of codes that are used to perfrom the specific tasks.
         >> substr --> It is also similar to slice but the second parameter defines the length of extracted part
             eg. let n = "this is ok";
                 console.log(substr(3, 6); >> s is
-                first parameter is starting index and last is length to extract 
+                first parameter is starting index and last is length to extract
 
 
     Replacing String Content
@@ -492,14 +492,14 @@ Functions are the block of codes that are used to perfrom the specific tasks.
             let replacedText = words.replace("punya", "Krishna");  this replaces punya with Krishna
             console.log(replacedText); >> my name is Krishna adhikari
 
-        !NOTE: 
+        !NOTE:
         >> the replace() method does not change the string but it returns new string
-        
+
         >> replace method only replaces first match
             for eg. let txt = "these is great. He is good";
                     let replacedText = txt.replace("is", "are");
                     this returns these are great. He is good    >> replaces only first match
-        
+
         >> replace is case sensitive i.e. Alpha & alpha are different
             to replace case insensitive we can use regular expression with an /i flag
             >> rext.replace(/ALPHA/i, "delta"); this replaces alpha with delta.
@@ -509,13 +509,13 @@ Functions are the block of codes that are used to perfrom the specific tasks.
                 let txt = "these is great. He is good";
                 let replacedText = txt.replace(/is/g, "are");
                 this returns these are great. He are good >> replaces all matches
-            
-    
+
+
     Converting to Upper and Lower Case
         >> toUpperCase();
             This converts the word to uppercase;
             eg. word.toUpperCase(); This returns the value of words in uppercase
-        
+
         >>toLowerCase();
             This converts the word to lowercase
             eg. word.toLowerCase(); This will returns the value of word in lowercase.
@@ -528,9 +528,9 @@ Functions are the block of codes that are used to perfrom the specific tasks.
         let newText = x.concat(" ", greet);
         >> This will join strings with value of x
 
-        
+
     !!ALL STRING METHODS RETURNS NEW STRING, THEY DONT MODIFY ORIGINAL STRING
-    
+
     String.trim();
         >> This method removes all the white space from starting and begining of the string
         e.g, let name = "    Krishna Adhikari     ";
@@ -544,12 +544,12 @@ Functions are the block of codes that are used to perfrom the specific tasks.
                     console.log(nam.padEnd(4, 0));
                      >> returns 5000
 
-    
+
     Extracting String Characters
         >> charAt(position) --> This will return the character at a specified index (position) in a string
             let text = "Hello World";
             text.charAt(1);  >> This returns e
-        
+
         >> charCodeAt(position) --> This will return the character unicode of specified index (position)
             e.g.
                 let text = "Hello World";
@@ -563,7 +563,7 @@ Functions are the block of codes that are used to perfrom the specific tasks.
 
         NOTE: If we want to work with string as an array, we can convert it to an array
 
-    
+
     Converting a string to an array
         >> To convert a string to array we can use split
             split takes parameter called seperator which specify the split position
@@ -601,12 +601,12 @@ Functions are the block of codes that are used to perfrom the specific tasks.
                 The indexOf() method cannot take powerful search values (regular expressions).
                 You will learn more about regular expressions in a later chapter.
 
-            >> String.lastindexOf() 
+            >> String.lastindexOf()
                 The lastIndexOf() method returns the index of the last occurrence of a specified text in a string
 
-            >> String.startsWith() 
+            >> String.startsWith()
             >> String.endsWith() etc..
-    
+
 
     JS Template Literals
         Template Literals use back-ticks (``) rather than the quotes ("") to define a string:
